@@ -33,8 +33,8 @@
             this.n4 = new System.Windows.Forms.Label();
             this.n3 = new System.Windows.Forms.Label();
             this.n2 = new System.Windows.Forms.Label();
-            this.n6 = new System.Windows.Forms.Label();
-            this.n7 = new System.Windows.Forms.Label();
+            this.e1 = new System.Windows.Forms.Label();
+            this.e2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -83,23 +83,23 @@
             this.n2.TabIndex = 4;
             this.n2.Text = "Num";
             // 
-            // n6
+            // e1
             // 
-            this.n6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.n6.Location = new System.Drawing.Point(123, 147);
-            this.n6.Name = "n6";
-            this.n6.Size = new System.Drawing.Size(48, 36);
-            this.n6.TabIndex = 5;
-            this.n6.Text = "Est";
+            this.e1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.e1.Location = new System.Drawing.Point(123, 147);
+            this.e1.Name = "e1";
+            this.e1.Size = new System.Drawing.Size(48, 36);
+            this.e1.TabIndex = 5;
+            this.e1.Text = "Est";
             // 
-            // n7
+            // e2
             // 
-            this.n7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.n7.Location = new System.Drawing.Point(233, 147);
-            this.n7.Name = "n7";
-            this.n7.Size = new System.Drawing.Size(48, 36);
-            this.n7.TabIndex = 6;
-            this.n7.Text = "Est";
+            this.e2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.e2.Location = new System.Drawing.Point(233, 147);
+            this.e2.Name = "e2";
+            this.e2.Size = new System.Drawing.Size(48, 36);
+            this.e2.TabIndex = 6;
+            this.e2.Text = "Est";
             // 
             // button1
             // 
@@ -118,8 +118,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.n7);
-            this.Controls.Add(this.n6);
+            this.Controls.Add(this.e2);
+            this.Controls.Add(this.e1);
             this.Controls.Add(this.n2);
             this.Controls.Add(this.n3);
             this.Controls.Add(this.n4);
@@ -138,8 +138,8 @@
         private System.Windows.Forms.Label n4;
         private System.Windows.Forms.Label n3;
         private System.Windows.Forms.Label n2;
-        private System.Windows.Forms.Label n6;
-        private System.Windows.Forms.Label n7;
+        private System.Windows.Forms.Label e1;
+        private System.Windows.Forms.Label e2;
         private System.Windows.Forms.Button button1;
     }
 }

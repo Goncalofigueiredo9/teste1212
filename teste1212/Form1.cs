@@ -17,18 +17,27 @@ namespace teste1212
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            List<int> n = new List<int>();
-            Random rnd = new Random();
 
-            for (int i=0;i<5;i++)
+        private int[] sorteia(int qtd, int max)
+        {
+            Random rnd = new Random();
+            List<int> l = new List<int>();
+
+            for (int i = 0; i < qtd; i++)
             {
                 int tmp;
-                do tmp = rnd.Next(1, 51);
-                while (n.Contains(tmp));
-                n.Add(tmp);
+                do tmp = rnd.Next(1, max);
+                while (l.Contains(tmp));
+                l.Add(tmp);
             }
+            l.Sort();
+            return l.ToArray();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            int[] n = sorteia(5, 51);
+            int[] s = sorteia(2, 12);
 
             n1.Text = n[0].ToString();
             n2.Text = n[1].ToString();
@@ -36,16 +45,9 @@ namespace teste1212
             n4.Text = n[3].ToString();
             n5.Text = n[4].ToString();
 
-            List<int> s = new List<int>();
-            for (int i = 0; i < 2; i++)
-            {
-                int tmp;
-                do tmp = rnd.Next(1, 13);
-                while (n.Contains(tmp));
-                s.Add(tmp);
-            }
-            n6.Text = s[0].ToString();
-            n7.Text = s[1].ToString();
+        
+            e1.Text = s[0].ToString();
+            e2.Text = s[1].ToString();
 
         }
     }
